@@ -69,6 +69,7 @@
       alert("Great!")
 
     console.log("Ask 3 questions with if/else alert messages");
+
     var question1 = prompt("Does Andrew have a dog?","Yes or No");
     if (question1.toLowerCase() === "yes"){
       alert("Correct, his name is Bubdow")
@@ -76,6 +77,7 @@
     else {
       alert("Andrew does have a dog, his name is Bubdow")
     };
+
     var question2= prompt("What was the Project from Code 101 called?","Enter code name here");
     if (question2.toLowerCase()=== "fit squirrels"){
       alert("Correct")
@@ -83,6 +85,7 @@
     else {
       alert("Not the answer I am looking for, see the bottom of the page.")
     };
+
     var question3 = prompt("Where was Andrew born?","Enter the city name");
     if (question3.toLowerCase() === "seattle"){
       alert("Correct")
@@ -90,9 +93,9 @@
     else {
       alert("Not the answer I am looking for, read the first part for a clue")
     };
-    // Attempt to do a switch for a number question, but input comes back as strings
+    // Fixed switch, remember if case is true than it runs
     var question4 = prompt("How many times has Andrew been to China?");
-    var x=parseInt(question4)
+    var x=parseInt(question4);
     switch (true) {
       case (x === 3):
         alert("Correct!");
