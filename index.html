@@ -3,7 +3,7 @@
 <head>
   <title>Hello World</title>
 
-  </head/
+</head/>
   <body>
     <h1>Welcome to My page</h1>
     <p>"Hello World!"</p>
@@ -14,7 +14,7 @@
        with an AAS in automecanics. I am the youngest of four.  I have been married to a chinese girl that I meet in
        starbucks.
     </p>
-    <p>
+    <div>
 
 
 
@@ -35,8 +35,8 @@
         <li>I also would like to get more tattoos</li>
         <li>Spending way too much time on the internet</li>
       </ol>
-    </p>
-    <p>
+    </div>
+    <div2>
       <!--Unordered list-->
       <h3>Some things that have happened in the last year are :</h3>
       <ul>
@@ -52,69 +52,9 @@
       <h3> <a href="https://abodey.github.io " target="_blank">Here is project "Fit Squirrels", done in code 101 </a></h3>
       <!--(Link to Squirrel )-->
 
-    </p>
+    </div2>
   </body>
-  <script type="text/javascript">
-      console.log("asking for the name of user");
-    var username = prompt("Please tell us who you are:","Namey MCNamerson");
-      console.log("users name");
-    var greeting = "Hello World I am "+username+"!";
-      console.log("doing the greeting");
-    // var today= new Date();
-    // greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
-    alert(greeting);
-    console.log("invite to game with if else");
-    var invitation = prompt("Would you like to play a guessing game about my page?","Yes or No");
-    if (invitation.toLowerCase() === "yes"){
-      alert("Great!")
-
-    console.log("Ask 3 questions with if/else alert messages");
-
-    var question1 = prompt("Does Andrew have a dog?","Yes or No");
-    if (question1.toLowerCase() === "yes"){
-      alert("Correct, his name is Bubdow")
-    }
-    else {
-      alert("Andrew does have a dog, his name is Bubdow")
-    };
-
-    var question2= prompt("What was the Project from Code 101 called?","Enter code name here");
-    if (question2.toLowerCase()=== "fit squirrels"){
-      alert("Correct")
-    }
-    else {
-      alert("Not the answer I am looking for, see the bottom of the page.")
-    };
-
-    var question3 = prompt("Where was Andrew born?","Enter the city name");
-    if (question3.toLowerCase() === "seattle"){
-      alert("Correct")
-    }
-    else {
-      alert("Not the answer I am looking for, read the first part for a clue")
-    };
-    // Fixed switch, remember if case is true than it runs
-    var question4 = prompt("How many times has Andrew been to China?");
-    var x=parseInt(question4);
-    switch (true) {
-      case (x === 3):
-        alert("Correct!");
-        break;
-        case (x <=2):
-        alert("You guessed too low");
-        break;
-        case (x >=4):
-        alert("You guessed too high");
-        break;
-      default:
-      alert("Please enter a number value");
-
-    };
-  }
-  else {
-    alert("Maybe later, enjoy the page!")
-    console.log("user decided not to play the guessing game");
-  };
+  <script type="text/javascript" src= "game.js">
 
   </script>
 
