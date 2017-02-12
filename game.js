@@ -9,7 +9,7 @@ console.log("doing the greeting");
 alert(greeting);
 console.log("invite to game with if else");
 var invitation = prompt("Would you like to play a guessing game about my page?","Yes or No");
-if (invitation.toLowerCase() === "yes"){
+if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
   alert("Great!")
 
   console.log("Ask 3 questions with if/else alert messages");
@@ -19,7 +19,7 @@ if (invitation.toLowerCase() === "yes"){
 
 
   var question1 = prompt("Does Andrew have a dog?","Yes or No");
-  if (question1.toLowerCase() === "yes"){
+  if ((question1.toLowerCase() === "yes")||(question1.toLowerCase() === "y")){
     alert("Correct, his name is Bubdow");
     baseScore++;
   }
@@ -29,7 +29,7 @@ if (invitation.toLowerCase() === "yes"){
   var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
   var question2= prompt("What was the Project from Code 101 called?","Enter code name here");
-  if (question2.toLowerCase()=== "fit squirrels"){
+  if ((question2.toLowerCase()=== "fit squirrels")||(question2.toLowerCase()=== "squirrels")){
     alert("Correct");
     baseScore++;
   }
@@ -39,7 +39,7 @@ if (invitation.toLowerCase() === "yes"){
   var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
   var question3 = prompt("Where was Andrew born?","Enter the city name");
-  if (question3.toLowerCase() === "seattle"){
+  if ((question3.toLowerCase() === "seattle")||(question3.toLowerCase() === "sea")){
     alert("Correct");
     baseScore++;
   }
