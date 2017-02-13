@@ -48,6 +48,7 @@ if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
   };
   var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
+    console.log("Switch question for qestion4");
   // Fixed switch, remember if case is true than it runs
   var question4 = prompt("How many times has Andrew been to China?");
   var x=parseInt(question4);
@@ -68,12 +69,14 @@ if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
   };
   var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
+    console.log("while loop for question 5");
+
   var question5 = prompt("Can you guess how old Andrew is?","Enter a number untill you get it!");
   while (question5 != 32) {
     if (question5<32){
-      question5 = prompt("You guessed too low, guess again");
+      question5 = prompt("You guessed too low, guess again.", "Enter a number");
     }else if(question5>32){
-      question5 = prompt("You guessed too high, guess again.");
+      question5 = prompt("You guessed too high, guess again.","Enter a number");
     }
     // alert("Correct");
     // baseScore++;
@@ -82,9 +85,11 @@ if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
   baseScore++;
 
   var userScore = alert("Your current score is "+ baseScore + " out of 5." );
-
+  console.log("end of Guessing Game");
 }
 else {
   alert("Maybe later, enjoy the page!")
   console.log("user decided not to play the guessing game");
 };
+
+console.log("reached end of JS script");
