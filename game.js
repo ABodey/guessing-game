@@ -1,95 +1,117 @@
 
-console.log("asking for the name of user");
-var username = prompt("Please tell us who you are:","Namey MCNamerson");
-console.log("users name");
-var greeting = "Hello World I am "+username+"!";
-console.log("doing the greeting");
-// var today= new Date();
-// greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
-alert(greeting);
-console.log("invite to game with if else");
-var invitation = prompt("Would you like to play a guessing game about my page?","Yes or No");
-if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
-  alert("Great!")
+function userName(){
+  console.log("asking for the name of user");
+  var username = prompt("Please tell us who you are:","Namey MCNamerson");
+  console.log("users name");
+  var greeting = "Hello World I am "+username+"!";
+  console.log("doing the greeting");
+  var nameParagraph = document.getElementById("name-location");
+  nameParagraph.innerHTML = greeting;
+  // var today= new Date();
+  // greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
+  return greeting;}
+  // console.log("invite to game with if else");
+  // var invitation = prompt("Would you like to play a guessing game about my page?","Yes or No");
+  // if ((invitation.toLowerCase() === "yes")||(invitation.toLowerCase() === "y")){
+  //   alert("Great!")
 
   console.log("Ask 3 questions with if/else alert messages");
   console.log("Added  score system");
 
-  var baseScore = (0);
-
-
-  var question1 = prompt("Does Andrew have a dog?","Yes or No");
-  if ((question1.toLowerCase() === "yes")||(question1.toLowerCase() === "y")){
-    alert("Correct, his name is Bubdow");
-    baseScore++;
-  }
-  else {
-    alert("Andrew does have a dog, his name is Bubdow")
+  function scoreKeeper(baseScore){
+    var baseScore = (0);
+    var scoreParagraph = document.getElementById("score-location");
+    scoreParagraph.innerHTML = ("Your current score is "+ baseScore + " out of 6." );
   };
-  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
-  var question2= prompt("What was the Project from Code 101 called?","Enter code name here");
-  if ((question2.toLowerCase()=== "fit squirrels")||(question2.toLowerCase()=== "squirrels")){
-    alert("Correct");
-    baseScore++;
-  }
-  else {
-    alert("Not the answer I am looking for, see the bottom of the page.")
-  };
-  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
+  function guessingGame(){
 
-  var question3 = prompt("Where was Andrew born?","Enter the city name");
-  if ((question3.toLowerCase() === "seattle")||(question3.toLowerCase() === "sea")){
-    alert("Correct");
-    baseScore++;
-  }
-  else {
-    alert("Not the answer I am looking for, read the first part for a clue")
-  };
-  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
+    function question1(){
+      var q1 = prompt("Does Andrew have a dog?","Yes or No");
+      if ((q1.toLowerCase() === "yes")||(q1.toLowerCase() === "y")){
+        var answerParagraph = document.getElementById("answer-location");
+        //  answerParagraph.innerHTML = question1;
+        alert("Correct, his name is Bubdow");
+        baseScore++;
+        return scoreKeeper;
+      }
+      else {
+        alert("Andrew does have a dog, his name is Bubdow")
+      };
+    };
+
+    function question2(){
+
+      var q2 = prompt("What was the Project from Code 101 called?","Enter code name here");
+      if ((q2.toLowerCase()=== "fit squirrels")||(q2.toLowerCase()=== "squirrels")){
+        alert("Correct");
+        baseScore++;
+      }
+      else {
+        alert("Not the answer I am looking for, see the bottom of the page.")
+      }
+    };
+    // var userScore = alert("Your current score is "+ baseScore + " out of 5." );
+
+    function question3(){
+      var q3 = prompt("Where was Andrew born?","Enter the city name");
+      if ((q3.toLowerCase() === "seattle")||(q3.toLowerCase() === "sea")){
+        alert("Correct");
+        baseScore++;
+      }
+      else {
+        alert("Not the answer I am looking for, read the first part for a clue")
+      }
+    };
+    //  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
     console.log("Switch question for qestion4");
-  // Fixed switch, remember if case is true than it runs
-  var question4 = prompt("How many times has Andrew been to China?");
-  var x=parseInt(question4);
-  switch (true) {
-    case (x === 3):
-    alert("Correct!");
-    baseScore++;
-    break;
-    case (x <=2):
-    alert("You guessed too low");
-    break;
-    case (x >=4):
-    alert("You guessed too high");
-    break;
-    default:
-    alert("Please enter a number value");
-
-  };
-  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
+    // Fixed switch, remember if case is true than it runs
+    function question4(){
+      var q4 = prompt("How many times has Andrew been to China?");
+      var x=parseInt(question4);
+      switch (true) {
+        case (x === 3):
+        alert("Correct!");
+        baseScore++;
+        break;
+        case (x <=2):
+        alert("You guessed too low");
+        break;
+        case (x >=4):
+        alert("You guessed too high");
+        break;
+        default:
+        alert("Please enter a number value");
+      }
+    };
+    //  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
 
     console.log("while loop for question 5");
 
-  var question5 = prompt("Can you guess how old Andrew is?","Enter a number untill you get it!");
-  while (question5 != 32) {
-    if (question5<32){
-      question5 = prompt("You guessed too low, guess again.", "Enter a number");
-    }else if(question5>32){
-      question5 = prompt("You guessed too high, guess again.","Enter a number");
-    }
-    // alert("Correct");
-    // baseScore++;
+    function question5(){
+      var q5 = prompt("Can you guess how old Andrew is?","Enter a number untill you get it!");
+      while (q5 != 32) {
+        if (q5<32){
+          q5 = prompt("You guessed too low, guess again.", "Enter a number");
+        }else if(q5>32){
+          q5 = prompt("You guessed too high, guess again.","Enter a number");
+        }
+        // alert("Correct");
+        // baseScore++;
+        ("Correct");
+        baseScore++;
+
+        //  var userScore = ("Your current score is "+ baseScore + " out of 5." );
+        console.log("end of Guessing Game");
+      }
+    };
   };
-  alert("Correct");
-  baseScore++;
 
-  var userScore = alert("Your current score is "+ baseScore + " out of 5." );
-  console.log("end of Guessing Game");
-}
-else {
-  alert("Maybe later, enjoy the page!")
-  console.log("user decided not to play the guessing game");
-};
+  // }
+  // else {
+  //   alert("Maybe later, enjoy the page!")
+  //   console.log("user decided not to play the guessing game");
+  // };
 
-console.log("reached end of JS script");
+  console.log("reached end of JS script");
