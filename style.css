@@ -1,6 +1,6 @@
 ol {
-  font-family: : Verdana;
-  color : red;
+  font-family: : sans-serif;
+
 }
 
 div .crt {
@@ -9,4 +9,8 @@ div .crt {
 
 div .wrg {
   color: red;
+}
+
+ul {
+  font-family: serif;
 }
