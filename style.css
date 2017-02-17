@@ -1,3 +1,31 @@
+* {
+  border: 1px solid red;
+}
+
+html {
+  margin: 0px 260px 0px 260px;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  font-family: serif;;
+  font-weight: 400;
+  color: blue;
+  text-align: center;
+
+}
+
+
+
+h3{
+  font-weight: bold;
+  color: #5499C7;
+  text-align: center;
+}
+
 ol {
   font-family: : sans-serif;
 
