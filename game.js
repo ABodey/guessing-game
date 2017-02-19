@@ -1,9 +1,12 @@
 
 function userName(){
   console.log("asking for the name of user, with a greeting");
-  var username = prompt("Please tell us who you are:","Namey MCNamerson");
-  //  console.log("users name");
-  var greeting = "Hello World I am "+username+"!";
+  //var username = ("Please tell us who you are:","Namey MCNamerson");
+  var elem = document.getElementById("username");
+  var form = document.forms["registration"];
+  var yourName = .elements["first_name"];
+//  console.log("users name");
+  var greeting = "Nice to meet you "+yourName+"!";
   //  console.log("doing the greeting");
   var nameParagraph = document.getElementById("name-location");
   nameParagraph.innerHTML = greeting;
@@ -52,10 +55,10 @@ function question1(){
   var q1 = prompt("Does Andrew have a dog?","Yes or No");
   if ((q1.toLowerCase() === "yes")||(q1.toLowerCase() === "y")){
     baseScore++;
-    result += ("<div class= crt>Correct, his name is Bubdow</div>");
+    result += "<div class= 'crt'>Correct, his name is Bubdow</div>";
   }
   else {
-    result += ("<div class= wrg>Andrew does have a dog, his name is Bubdow</div>");
+    result += "<div class= 'wrg'>Andrew does have a dog, his name is Bubdow</div>";
   };
 };
 
@@ -63,10 +66,10 @@ function question2(){
   var q2 = prompt("What was the Project from Code 101 called?","Enter code name here");
   if ((q2.toLowerCase()=== "fit squirrels")||(q2.toLowerCase()=== "squirrels")||(q2.toLowerCase()=== "fat")){
     baseScore++;
-    result += ("<div class= crt>Correct,The page name was Fit Squirrels</div>");
+    result += "<div class= 'crt'>Correct,The page name was Fit Squirrels</div>";
   }
   else {
-    result += ("<div class= wrg>Not the answer I am looking for, see the bottom of the page.</div>");
+    result += "<div class= 'wrg'>Not the answer I am looking for, see the bottom of the page.</div>";
   }
 };
 
@@ -74,10 +77,10 @@ function question3(){
   var q3 = prompt("Where was Andrew born?","Enter the city name");
   if ((q3.toLowerCase() === "seattle")||(q3.toLowerCase() === "sea")){
     baseScore++;
-    result += ("<div class= crt>Correct Andrew was born in Seattle</div>");
+    result += "<div class= 'crt'>Correct Andrew was born in Seattle</div>";
   }
   else {
-    result += ("<div class= wrg>Not the answer I am looking for, read the first part for a clue</div>");
+    result += "<div class= 'wrg'>Not the answer I am looking for, read the first part for a clue</div>";
   }
 };
 
@@ -87,17 +90,17 @@ function question4(){
   var x=parseInt(q4);
   switch (true) {
     case (x === 3):
-    result += ("<div class= crt>Correct, Andrew has been to China 3 times so far.</div>");
+    result += "<div class= 'crt'>Correct, Andrew has been to China 3 times so far.</div>";
     baseScore++;
     break;
     case (x <=2):
-    result += ("<div class= wrg>You guessed too low</div>");
+    result += "<div class= 'wrg>'You guessed too low</div>";
     break;
     case (x >=4):
-    result += ("<div class= wrg>You guessed too high</div>");
+    result += "<div class= 'wrg'>You guessed too high</div>";
     break;
     default:
-    result += ("<div class= wrg>Please enter a number value, to guess an age.</div>");
+    result += "<div class= 'wrg'>Please enter a number value, to guess an age.</div>";
   }
 };
 
@@ -113,7 +116,7 @@ function question5(){
     }
   }
   baseScore++;
-  result += ("<div class= crt>Correct</div>");
+  result += "<div class= 'crt'>Correct</div>";
 
 
 };
@@ -123,10 +126,10 @@ function question6(){
   var ansArray = ["skiing", "walking the dog", "train the dog", "resturaunts", "cook", "motorcycle", "old cadillac", "shooting", "tattoos", "internet"];
   var q6 = prompt("Can you guess what one of Andrew's hobbies is?","Enter one or two words for the hobbie");
   if (ansArray.indexOf(q6.toLowerCase()) === -1 ){
-    result += ("<div class= wrg>Try reading the list to see the answer.</div>")
+    result += "<div class= 'wrg'>Try reading the list to see the answer.</div>"
   } else {
     baseScore++
-    result += ("<div class= crt>You guessed the hobbie correct.</div>")
+    result += "<div class= 'crt'>You guessed the hobbie correct.</div>"
   }
 
 

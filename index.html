@@ -10,65 +10,116 @@
 <body>
   <h1>Welcome to My page</h1>
   <div>"Hello World!"</div>
+  <div class="name">My name is <i>Andrew Bodey</i>.</div>
+
   <br>
-  <div class="name">My name is <i>Andrew Bodey</i></div>.
+
+  <input id="username" type="text" name="yourName" />
+  <button onclick="userName()">Please tell us who you are</button>
+  <p id="name-location"></p>
+
   <p>I was born in Seattle and lived there until last year. I am currently working as a mechanic at a Buick GMC
     dealership. Working with cars has been fun, and I have been fairly successful at it.  I graduated from Shoreline CC
     with an AAS in automecanics. I am the youngest of four children. <!-- I have been married to a chinese girl that I meet in
       starbucks. -->
     </p>
-    <div class="button">
-      <!-- Buttons! -->
-      <button onclick="userName()">Tell us who you are</button>
 
-          <p id="name-location">Your Name will apear Here.</p>
-          <br>
+  </div>
+  <div class="list1">
+    <!--ordered list-->
+    <h3>I have a host of hobbies:</h3>
+    <img src="http://www.powderhounds.com/site/DefaultSite/filesystem/images/USA/StevensPass/Overview/StevensPass-19.jpg" alt="skier atop Mountain View">
 
+    <!--(link to picture of skiing)-->
+    <ol type="A">
+      <li>Skiing</li>
+      <li>walking the dog</li>
+      <li>trying to train the dog</li>
+      <li>going to new resturaunts with my wife</li>
+      <li>trying to cook somethin new, usually bake</li>
+      <li>I like to motorcycle when it is nice out</li>
+      <li>Also like to work on my old cadillac</li>
+      <li>I also like to target shoot</li>
+      <li>I also would like to get more tattoos</li>
+      <li>Spending way too much time on the internet</li>
+    </ol>
+  </div>
+  <div class="list2">
+    <!--Unordered list-->
+    <h3>Some things that have happened in the last year are :</h3>
+    <ul>
+      <li>Moved to Oregon</li>
+      <li>went to China for the third time</li>
+      <li>went to Europe and skied the Alps</li>
+      <li>Bought a house in Newberg</li>
+      <li>Expecting a child</li>
+      <li>Got a dog</li>
+      <li>And..</li>
+      <li>Went to code 101 to start this new adventure</li>
+    </ul>
+    <h3> <a href="https://abodey.github.io " target="_blank">Here is project "Fit Squirrels", done in code 101 </a></h3>
+    <!--(Link to Squirrel )-->
 
-      <button onclick="guessingGame()">Play the Guessing Game</button>
-    <p id="answer-location">Answers to the Guessing Game go Here.</p>
+  </div>
+  <div class="button">
+    <!-- Buttons! -->
+
+    <br>
+    <div class="list3">
+      <form action="" method="post" name="guessingGame">
+      <h1>The Guessing Game</h1>
+
+      <ol>
+        <li>Does Andrew have a dog?
+          <input type="radio" name="q1input" value="yes" />Yes
+          <input type="radio" name="q1input" value="no" />No
+        </li>
+        <li>What was Andrew's code 101 project?
+          <input type="text" name="" />
+        </li>
+        <li>What city was Andrew born in?
+          <input type="text" name="" />
+        </li>
+        <li>How many times has Andrew been to China?
+          <input type="radio" name="q4input" value="yes" />1
+          <input type="radio" name="q4input" value="yes" />2
+          <input type="radio" name="q4input" value="yes" />3
+          <input type="radio" name="q4input" value="yes" />4
+        </li>
+        <li>Can you guess Andrew's Age?
+          <input type="text" name="" />
+        </li>
+          <li>Can you name one of Andrew's Hobbies?
+            <select class="" name="q6">
+              <option value="balet">Balet</option>
+              <option value="dog1">Walking the dog</option>
+              <option value="knife">Knife fights in allies</option>
+              <option value="resturaunts">Resturaunts with Wife</option>
+              <option value="cook">Cooking something new</option>
+              <option value="moto">Ride the motorcycle</option>
+              <option value="cadillac">Work on Cadillac</option>
+              <option value="shoot">Target Shooting</option>
+              <option value="tattoo">Getting tattoos</option>
+              <option value="internet">Explore the internet</option>
+              <option value="skiing">Skiing</option>
+              <option value="scuba">Diving with Scuba</option>
+              <option value="dog2">Training the dog</option>
+              <option value="yoga">Hot Yoga</option>
+            </select>
+          </li>
+
+        </ol>
+</form>
+
+        <p id="answer-location">Answers to the Guessing Game go Here.</p>
+        <br>
+        <button onclick="guessingGame()">Play the Guessing Game</button>
 <br>
-    <p id="total-location">Total score goes Here.</p>
-<br>
+        <p id="total-location">Total score goes Here.</p>
+        <br>
 
-</div>
-<div class="list1">
-      <!--ordered list-->
-      <h3>I have a host of hobbies:</h3>
-      <img src="http://www.powderhounds.com/site/DefaultSite/filesystem/images/USA/StevensPass/Overview/StevensPass-19.jpg" alt="skier atop Mountain View">
-
-      <!--(link to picture of skiing)-->
-      <ol type="A">
-        <li>Skiing</li>
-        <li>walking the dog</li>
-        <li>trying to train the dog</li>
-        <li>going to new resturaunts with my wife</li>
-        <li>trying to cook somethin new, usually bake</li>
-        <li>I like to motorcycle when it is nice out</li>
-        <li>Also like to work on my old cadillac</li>
-        <li>I also like to target shoot</li>
-        <li>I also would like to get more tattoos</li>
-        <li>Spending way too much time on the internet</li>
-      </ol>
-    </div>
-    <div class="list2">
-      <!--Unordered list-->
-      <h3>Some things that have happened in the last year are :</h3>
-      <ul>
-        <li>Moved to Oregon</li>
-        <li>went to China for the third time</li>
-        <li>went to Europe and skied the Alps</li>
-        <li>Bought a house in Newberg</li>
-        <li>Expecting a child</li>
-        <li>Got a dog</li>
-        <li>And..</li>
-        <li>Went to code 101 to start this new adventure</li>
-      </ul>
-      <h3> <a href="https://abodey.github.io " target="_blank">Here is project "Fit Squirrels", done in code 101 </a></h3>
-      <!--(Link to Squirrel )-->
-
-    </div>
-  </body>
+      </div>
+    </body>
 
 
-  <html>
+    <html>

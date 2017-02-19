@@ -3,7 +3,7 @@ border: 1px solid red;
 }*/
 
 html {
-  margin: 0px 260px 0px 260px;
+  padding : 0px 260px 0px 260px;
   background-color: #EBEDEF;
 }
 
@@ -18,15 +18,19 @@ h1 {
   text-align: center;
 
 }
-div.name{
+/*div.name{
   text-align: center;
-}
+}*/
 
-div.list1{
+.list1{
   text-align: left;
 }
 
-div.list2{
+.list2{
+  text-align: left;
+}
+
+.list3{
   text-align: left;
 }
 
@@ -49,7 +53,7 @@ h3 {
 }
 
 ol {
-  font-family: : sans-serif;
+  font-family: sans-serif;
 
 }
 
