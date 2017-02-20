@@ -2,13 +2,16 @@
 function userName(){
   console.log("asking for the name of user, with a greeting");
   //var username = ("Please tell us who you are:","Namey MCNamerson");
-  var elem = document.getElementById("username");
-  var form = document.forms["registration"];
-  var yourName = .elements["first_name"];
+  var yourName =(document.getElementById('username').value);
+  // document.getElementById("username".value);
+  console.log(yourName);
+//  var form = document.forms["registration"];
+//  var yourName = .elements["first_name"];
 //  console.log("users name");
-  var greeting = "Nice to meet you "+yourName+"!";
-  //  console.log("doing the greeting");
+  var greeting = "Nice to meet you "+yourName+" !";
+   console.log(greeting);
   var nameParagraph = document.getElementById("name-location");
+  console.log(nameParagraph);
   nameParagraph.innerHTML = greeting;
   // var today= new Date();
   // greeting += "\n" + (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
