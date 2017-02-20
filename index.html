@@ -11,8 +11,8 @@
   <h1>Welcome to My page</h1>
   <div>"Hello World!"</div>
   <div class="name">My name is <i>Andrew Bodey</i>.</div>
-<br>
-<input id="username" type="text" name="yourName" />
+  <br>
+  <input id="username" type="text" name="yourName" />
   <button onclick="userName()">Please tell us who you are</button>
   <!-- <input type="button" onclick="alert(document.getElementById('t').value)" value="Click me!"/> -->
   <p id="name-location"></p>
@@ -65,31 +65,31 @@
 
     <br>
     <div class="list3">
-      <form action="" method="post" name="guessingGame">
-      <h1>The Guessing Game</h1>
+      <form id="ggame" action="" method="post" name="guessingGame">
+        <h1>The Guessing Game</h1>
 
-      <ol>
-        <li>Does Andrew have a dog?<br>
-          <input type="radio" name="q1input" value="yes" />Yes
-          <input type="radio" name="q1input" value="no" />No
-        </li>
-        <li>What was Andrew's code 101 project?<br>
-          <input type="text" name="" />
-        </li>
-        <li>What city was Andrew born in?<br>
-          <input type="text" name="" />
-        </li>
-        <li>How many times has Andrew been to China?<br>
-          <input type="radio" name="q4input" value="yes" />1
-          <input type="radio" name="q4input" value="yes" />2
-          <input type="radio" name="q4input" value="yes" />3
-          <input type="radio" name="q4input" value="yes" />4
-        </li>
-        <li>Can you guess Andrew's Age?<br>
-          <input type="text" name="" />
-        </li>
+        <ol>
+          <li>Does Andrew have a dog?<br>
+            <input id="dq1" type="radio" name="q1input" value="yes" />Yes
+            <input id="dq2" type="radio" name="q1input" value="no" />No
+          </li>
+          <li>What was Andrew's code 101 project?<br>
+            <input id="proQ" type="text" name="proj" />
+          </li>
+          <li>What city was Andrew born in?<br>
+            <input id="cityQ" type="text" name="cityBorn" />
+          </li>
+          <li>How many times has Andrew been to China?<br>
+            <input id="cq1" type="radio" name="q4input" value="yes" />1
+            <input id="cq2" type="radio" name="q4input" value="yes" />2
+            <input id="cq3" type="radio" name="q4input" value="yes" />3
+            <input id="cq4" type="radio" name="q4input" value="yes" />4
+          </li>
+          <li>Can you guess Andrew's Age?<br>
+            <input id="ageQ" type="text" name="checkAge" />
+          </li>
           <li>Can you name one of Andrew's Hobbies?<br>
-            <select class="" name="q6">
+            <select id="hobbQ" class="" name="q6">
               <option value="balet">Balet</option>
               <option value="dog1">Walking the dog</option>
               <option value="knife">Knife fights in allies</option>
@@ -108,17 +108,17 @@
           </li>
 
         </ol>
-</form>
+      </form>
 
-        <p id="answer-location">Answers to the Guessing Game go Here.</p>
-        <br>
-        <button onclick="guessingGame()">Play the Guessing Game</button>
-<br>
-        <p id="total-location">Total score goes Here.</p>
-        <br>
+      <p id="answer-location">Answers to the Guessing Game go Here.</p>
+      <br>
+      <button onclick="guessingGameResult()">Play the Guessing Game</button>
+      <br>
+      <p id="total-location">Total score goes Here.</p>
+      <br>
 
-      </div>
-    </body>
+    </div>
+  </body>
 
 
-    <html>
+  <html>
