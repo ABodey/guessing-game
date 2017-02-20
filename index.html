@@ -9,12 +9,12 @@
 </head/>
 <body>
   <h1>Welcome to My page</h1>
-  <div>"Hello World!"</div>
+  <div class="name">"Hello World!"</div>
   <div class="name">My name is <i>Andrew Bodey</i>.</div>
   <br>
-  <input id="username" type="text" name="yourName" />
-  <button onclick="userName()">Please tell us who you are</button>
-  <!-- <input type="button" onclick="alert(document.getElementById('t').value)" value="Click me!"/> -->
+  <div class="name"><input id="username" type="text" name="yourName" />
+    <button onclick="userName()">Please tell us who you are</button>
+  </div>
   <p id="name-location"></p>
 
   <p>I was born in Seattle and lived there until last year. I am currently working as a mechanic at a Buick GMC
@@ -23,7 +23,6 @@
       starbucks. -->
     </p>
 
-  </div>
   <div class="list1">
     <!--ordered list-->
     <h3>I have a host of hobbies:</h3>
@@ -69,26 +68,27 @@
         <h1>The Guessing Game</h1>
 
         <ol>
-          <li>Does Andrew have a dog?<br>
+          <li>Does Andrew have a dog?<br><span id="q1a"></span>
             <input id="dq1" type="radio" name="q1input" value="yes" />Yes
             <input id="dq2" type="radio" name="q1input" value="no" />No
           </li>
-          <li>What was Andrew's code 101 project?<br>
+          <li>What was Andrew's code 101 project?<br><span id="q2a"></span>
             <input id="proQ" type="text" name="proj" />
           </li>
-          <li>What city was Andrew born in?<br>
+          <li>What city was Andrew born in?<br><span id="q3a"></span>
             <input id="cityQ" type="text" name="cityBorn" />
           </li>
-          <li>How many times has Andrew been to China?<br>
+          <li>How many times has Andrew been to China?<br><span id="q4a"></span>
             <input id="cq1" type="radio" name="q4input" value="yes" />1
             <input id="cq2" type="radio" name="q4input" value="yes" />2
             <input id="cq3" type="radio" name="q4input" value="yes" />3
             <input id="cq4" type="radio" name="q4input" value="yes" />4
           </li>
           <li>Can you guess Andrew's Age?<br>
-            <input id="ageQ" type="text" name="checkAge" />
+            <input onblur="question51()"id="ageQ" type="text" name="checkAge" />  <span id="arrow"></span>
+            <span id="q5a"></span>
           </li>
-          <li>Can you name one of Andrew's Hobbies?<br>
+          <li>Can you name one of Andrew's Hobbies?<br><span  id="q6a"></span>
             <select id="hobbQ" class="" name="q6">
               <option value="balet">Balet</option>
               <option value="dog1">Walking the dog</option>

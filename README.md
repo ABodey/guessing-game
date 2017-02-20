@@ -2,6 +2,7 @@
 
 This is a guessing game based upon a website about me
 It has two buttons, one for a greeting and one for a guessing games
+It has a form you fill out for the game
 This page uses HTML and javascript
 
 
