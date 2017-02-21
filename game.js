@@ -22,12 +22,6 @@ console.log("add global varibles");
 var baseScore = 0;
 var result = "";
 
-// //function showName() {
-//   var form = document.forms["guessingGame"];
-//   var proj = form.elements["proj"];
-//   var cityBorn = form.elements["cityBorn"];
-//   //alert(first.value+" "+last.value);
-// //};
 
 //score keeping function
 function scoreKeeper(){
